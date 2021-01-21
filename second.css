@@ -1,0 +1,47 @@
+<style>
+img {
+                margin-left: 25px;
+            }
+            span{
+                margin-left: 200px;
+                color: red;
+                font-size:50px;
+            }
+            tele{
+                background-color: blue;
+            }
+            text{
+                background-color: cornflowerblue;
+                color: cornsilk;
+                font-size: 350px;
+            }
+            button{
+                margin-left: 600px;
+                text-align: center;
+                background-color: rgb(247, 152, 11);
+                border-radius: 25px;
+                padding: 25px;
+                color: seashell;
+            }
+            td{
+                text-align: left;
+            }
+            a{
+                margin-left: 10px; 
+                color: black;
+            }
+            div{
+                padding: 10px;
+                color: white;
+                background-color: red;
+                height: 50px;
+                text-align: center;
+            }
+            #pic1{
+                height: 600px; 
+                width: 1300px;
+            }
+            i{
+                margin-left: 100px;
+            }
+</style>

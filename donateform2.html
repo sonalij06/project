@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="fourth.css">
+        
+        <script src="https://kit.fontawesome.com/9cae73d35f.js" crossorigin="anonymous"></script>
+        
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script>
+            function myFunction() {
+                document.getElementById("panel").style.display = "block";
+            }
+            </script>
+            <script>
+            function sendEmail() {
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username : "sonalijain0605@gmail.com",
+                    Password : "iebsilozktktdqrm",
+                    To : 'sonalijain0605@gmail.com',
+                    From : "sonali.jain.cs.2018@miet.ac.in",
+                    Subject : "Successfully Donated",
+                    Body : " Thanks for help.Your one step may help many lifes",
+                }).then(
+                    message => alert("mail sent successfully")
+                    );
+                }
+                function deatils()
+
+                {
+                    var person = prompt("Please enter your name", );
+                    var mail=prompt("Please enter email address for verification",)
+                }
+                </script>
+                
+    </head>
+    
+    <body>
+        <fieldset>
+            
+            <header>
+                <img src="savechildrem.png" >
+            </header>
+            
+            <section>
+                <nav >
+                    <ul >
+                        <div>
+                            <li><a href="#credit-card" class="flip" onclick="myFunction()" style="width: 100%;"><i class="fas fa-credit-card"></i>Credit Card</a></li><br><br><br>
+                            <div>
+                                <img src="visa.png" id="pic">
+                                <img src="Rupay-Logo.png" id="pic">
+                                <img src="mastercard.png" id="pic">
+                                <form>
+                                    <label for="cardno.">Card Number:</label><br>
+                                    <input type="text" id="cardno." name="cardno." placeholder="" size="20" required><br><br>
+                                    <table>
+                                        <tr>
+                                            <th>
+                                                <label for="date">Expiration Date:</label><br><br>
+                                            </th>
+                                            
+                                            <th>
+                                                <label for="no">CVV/CVC</label><br>
+                                            </th>                       
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <input type="text" id="date" name="date"  placeholder="Month" size="5" required>
+                                                <input type="text" id="no" name="no" placeholder="Year" size="5"  required><br><br>
+                                            </td>
+                                            
+                                            <td>
+                                                <input type="password" id="no" name="no"  size="3" maxlength="3" required><br><br>
+                                            </td>
+                                        
+                                        </tr>
+                                    
+                                    </table><br>
+                                    <label for="fname">Card Holder Name:</label><br><br>
+                                    <input type="text" id="fname" name="fname" placeholder="John" size="20" required><br>
+                                
+                                </form>
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    </nav>
+                
+                </section><br><br><br>
+                
+                
+                
+                <section>
+                    <nav>
+                        <div>
+                            <li><a href="#debit-card" class="flip" onclick="myFunction()"><i class="fas fa-wallet"></i>Debit Card</a></li><br><br><br>
+                            <div >
+                                <img src="visa.png" id="pic">
+                                <img src="Rupay-Logo.png" id="pic">
+                                <img src="mastercard.png" id="pic">
+                                
+                                <form>
+                                    <label for="cardno.">Card Number:</label><br>
+                                    <input type="text" id="cardno." name="cardno." placeholder="" size="20" required><br><br>
+                                    
+                                    <table>
+                                        <tr>
+                                            <th>
+                                                <label for="date">Expiration Date:</label><br><br>
+                                            </th>
+                                            
+                                            <th>
+                                                <label for="no">CVV/CVC</label><br>
+
+                                            </th>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <input type="text" id="date" name="date"  placeholder="Month" size="5" required>
+                                                <input type="text" id="no" name="no" placeholder="Year" size="5"  required><br><br>
+                                            </td>
+                                            
+                                            <td>
+                                                <input type="password" id="no" name="no"  size="3" required><br><br>
+                                            </td>
+                                        </tr>
+                                    </table><br>
+                                    <label for="fname">Card Holder Name:</label><br><br>
+                                    <input type="text" id="fname" name="fname" placeholder="John" size="20" required><br>
+                                </form>
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    </nav>
+                
+                </section><br><br><br>
+                
+                <section>
+                    <nav>
+                        <div >
+                            <li><a href="#internet-bank" class="flip" onclick="myFunction()"><i class="fa fa-bank"></i>Internet Banking</a></li><br><br><br>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="axisbank.png" id="pic"> 
+                                        </td>
+                                        
+                                        <td>
+                                            <img src="icici.jpg" id="pic"> 
+                                        </td>
+                                        
+                                        <td>
+                                            <img src="sbi.png" id="pic"> 
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                                <label for="name">BANK NAME:</label><br><br>
+                                <input type="text" id="name" name="name" placeholder="" size="20"  required><br><br>
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    </nav>
+                
+                </section><br><br><br>
+                
+                
+                <section>
+                    <nav>
+                        <div >
+                            <li><img src="googleimahe.png" id="google"><a href="#gpay" class="flip" onclick="myFunction()">Pay</a></li><br><br><br>
+                            <div>
+                                <label for="text">Enter your Google Pay UPI ID:</label><br><br>
+                                <input type="text" id="no" name="no" placeholder="" size="20"  required><br><br>
+                            </div>
+                        </div>
+                    
+                    </ul>
+                
+                </nav>
+            
+            </section>
+        
+        </fieldset>
+        
+        
+        
+        <footer>
+            <fieldset>
+                <p> Merchant name</p> 
+                <p>Save the children</p>
+                <p>Payment amount :</p>
+                <input type="text" placeholder="₹0" height="20px" width="100px" required >
+            </fieldset>
+            
+            <br><br><br>
+            
+            
+            <form >
+                <input type="button" id="gold" value="DETAILS" onclick="deatils()"/>
+            </form>
+            
+            
+            <form method="post">
+                <input type="button" id="gold" value="MAKE PAYMENT" onclick="sendEmail()"/>
+            </form> 
+        
+        </footer>
+    
+    </body>
+    
+</html>
